@@ -13,7 +13,7 @@
                 <OptionButton Name="CMarkingCategoryButton" StyleClasses="OpenLeft" />
                 <LineEdit Name="CMarkingSearch" PlaceHolder="{Loc 'markings-search'}" />
 
-                <ItemList Name="CMarkingsUnused" VerticalExpand="True" MinSize="300 250" />
+                <GridContainer Name="CMarkingsUnused" Columns="4" VerticalExpand="True" MinSize="300 250" />
                 <Button Name="CMarkingAdd" Text="{Loc 'markings-add'}" StyleClasses="OpenRight" />
             </BoxContainer>
 
@@ -21,7 +21,7 @@
             <BoxContainer Orientation="Vertical" HorizontalExpand="True">
                 <Label Text="{Loc 'markings-used'}" />
 
-                <ItemList Name="CMarkingsUsed" VerticalExpand="True" MinSize="300 250" />
+                <GridContainer Name="CMarkingsUsed"  Columns="4"  VerticalExpand="True" MinSize="300 250" />
 
                 <BoxContainer Orientation="Horizontal">
                     <Button Name="CMarkingRankUp" Text="{Loc 'markings-rank-up'}" StyleClasses="OpenBoth" HorizontalExpand="True" />
